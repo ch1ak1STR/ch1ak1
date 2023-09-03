@@ -9,10 +9,10 @@
   translation: "カテゴリー"
 
 - id: "global.tags"
-  translation: "tags"
+  translation: "Tags"
 
 - id: "global.tag"
-  translation: "tags"
+  translation: "Tags"
 
 - id: "global.archives"
   translation: "Archives"

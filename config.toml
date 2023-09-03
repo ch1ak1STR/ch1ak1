@@ -188,7 +188,7 @@ canonifyurls = true
   coverImage = "images/cover.jpg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
-  imageGallery = false
+  imageGallery = true
 
   # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
   thumbnailImage = true
