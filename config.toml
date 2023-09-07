@@ -49,7 +49,7 @@ canonifyurls = true
   identifier = "posts"
   name = "Posts"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-edit\" aria-hidden=\"true\"></i>"
-  url = "/posts"
+  url = "/post"
 [[menu.main]]
   weight = 3
   identifier = "tags"
