@@ -10,25 +10,15 @@ tags:
 <!--more-->
 # Abstract
 
-自分のサーバにSearXNGを用意したので、SearXNGの紹介とついでに構築手順を解説する。
-- SearXNGの概要
-- ホストした理由
-- ホストの手順
-- SearXNGの簡単な設定(管理者側)
-  - SearXNGのバージョンアップ方法
-  -
-- SearXNGの簡単な設定(ユーザ側)
-- 今後について
-- 参考文献
+自分のサーバにSearXNGを用意したので、SearXNGの紹介とついでに構築手順を解説する。  
 
 # SearXNGの概要
-SearXNG[https://docs.searxng.org/]とは複数の検索サイトを横断して検索し、結果を出力するメタ検索エンジンです。
-GoogleやDuckDuckgoをそのまま使うのと比べると下記利点がある。
-
+[SearXNG](https://docs.searxng.org/)とは複数の検索サイトを横断して検索し、結果を出力するメタ検索エンジンです。GoogleやDuckDuckgoを使うのと比べると下記利点がある。
+<br><br>
 - 沢山のサイトの検索結果を同時に閲覧出来る
 - データ収集の懸念が無い
 - 細かい設定が可能
-
+<br><br>
 {{< figure src="002_1.png" = full >}}  
 ※ 自分のSearXNGで「ch1ak1」と検索した結果。
 
@@ -44,18 +34,17 @@ SearXNGは個々人でインスタンスを公開出来るので、他人が公�
 
 ※この記事ではファイアウォールがどうとかSSL対応がどうとかnginxのディレクティブ全体がどうとかまでは書かない。SearXNG固有の内容について書く。
 
-先述の通り、筆者調べでは日本語文献のSearXNGの構築記事は存在しないが、公式ドキュメントが充実しており導入は難しくない。
+~~先述の通り、筆者調べでは日本語文献のSearXNGの構築記事は存在しないが~~公式ドキュメントが充実しており導入は難しくない。
 
 SearXNGには3つのインストールオプションがある。
+<br><br>
 1. Dockerでのインストール
 2. スクリプトでのインストール
 3. 1つ1つ手順を踏んで行うインストール
 
 Docker使いたい人は1、使いたくない人は2を選択するのが良いと思われる。
 
-自分は2を選択しているので、以下はスクリプトによるインストール方法を紹介。
-
-といっても、SearXNG本体をダウンロードしてインストールスクリプトを走らせるだけですが。
+自分は2を選択しているので、以下はスクリプトによるインストール方法を紹介。といっても、SearXNG本体をダウンロードしてインストールスクリプトを走らせるだけですが。
 {{< codeblock "shell">}}
 $ cd ~/Downloads
 $ git clone https://github.com/searxng/searxng.git searxng
@@ -95,9 +84,7 @@ sudo -H /usr/local/searxng/searxng-src/utils/searxng.sh instance update
 
 ## SearXNG全般の設定
 
-[3][公式ドキュメント](https://docs.searxng.org/admin/settings/settings.html#settings-yml-location)によると、SearXNGの設定ファイルは```/etc/searxng/settings.yml```にあるとのこと。
-
-設定項目の詳細はドキュメントを読んでもらった方がよいと思う。
+[公式ドキュメント](https://docs.searxng.org/admin/settings/settings.html#settings-yml-location)によると、SearXNGの設定ファイルは```/etc/searxng/settings.yml```にあるとのこと。設定項目の詳細はドキュメントを読んでもらった方がよいと思う。
 
 が、```use_default_settings```について自分はぱっと見よくわからなかったので触れておくと、
 - true -> デフォルト設定+settings.ymlを読む
@@ -112,7 +99,7 @@ sudo service uwsgi reload searxng
 # SearXNGの簡単な設定(ユーザ側)
 トップページ右上の設定ボタンから設定可能です。
 とりあえずこれ知っとけば困らないよっていう設定のみ抜粋。
-
+<br><br>
 - 一般：自動補完 
   - 検索バーに出てくる検索候補/検索予測のこと。Googleがおすすめ。
 - ユーザーインターフェース：無限スクロール
@@ -130,5 +117,7 @@ sudo service uwsgi reload searxng
 
 # 参考文献
 - [1] [SearXNG 公式ドキュメント](https://docs.searxng.org/)
-- [2] [SearXNGでメタ検索エンジンを所有する]
+- [2] [SearXNGでメタ検索エンジンを所有する](https://riq0h.jp/2023/08/20/091355/)
 - [3] [SearXNG 公式ドキュメント nginx記述例](https://docs.searxng.org/admin/installation-nginx.html#nginx-s-searxng-site)
+- [4] [SearXNG 公式ドキュメント settings.yml解説](https://docs.searxng.org/admin/settings/settings.html#settings-yml-location)
+ 
