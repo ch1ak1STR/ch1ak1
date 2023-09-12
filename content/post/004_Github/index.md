@@ -1,7 +1,7 @@
 ---
 title: "自分的githubのお勉強"
 date: 2023-06-27T00:00:00+09:00
-draft: false
+draft: true
 pinned: false
 tags:
 - github

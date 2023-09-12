@@ -1,7 +1,7 @@
 ---
 title: "自分的Hugoのお勉強"
 date: 2023-06-26T00:00:00+09:00
-draft: false
+draft: true
 pinned: false
 tags:
 - Hugo

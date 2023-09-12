@@ -7,8 +7,9 @@ tags:
 - misskey
 - Android 
 ---
-自分用に開発していたけど、せっかくならリリースするかとコソコソ開発していたMisskeyクライアントを公開しました。
 <!--more-->
+自分用に開発していたけど、せっかくならリリースするかとコソコソ開発していたMisskeyクライアントを公開しました。
+
 名前の通り、FLOSSなMisskeyクライアントを開発しました。名前は「Flosskey」です。[こちら](https://github.com/ch1ak1STR/Flosskey/releases/tag/1.0)からダウンロード出来ます。
 
 ## 開発方針
@@ -36,7 +37,7 @@ githubのREADMEに書いてあるが、FLOSSなこととPlay Serviceが無くて
 ## 使い方
 基本的にMisskeyのUIはそのまま使えるのでそれらの説明は割愛して、本アプリで独自に用意しているサイドバー絡みの説明をします。
 
-{{< figure src="20230814-095457.png" width=300px  height=300px >}}
+{{< figure src="20230814-095457.png" = full>}}
 
 
 左からスワイプでサイドバーが出せます。サイドバーでは閲覧や通知に使用するインスタンス情報/APIキーの登録/編集が出来ます。※APIキーはアプリ内部で持つけど、KeyStoreで安全に保持しています。

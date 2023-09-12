@@ -2,7 +2,7 @@
 title: "pythonで音声変換スクリプト書いた"
 date: 2023-08-16T09:00:00+09:00
 description:
-draft: false
+draft: true
 tags:
 - python
 ---

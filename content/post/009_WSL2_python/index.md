@@ -9,8 +9,8 @@ tags:
 - AI
 - 機械学習
 ---
-WSL2の勉強ついでに機械学習用のpython環境をWSL2で用意したのでメモ。
 <!--more-->
+WSL2の勉強ついでに機械学習用のpython環境をWSL2で用意したのでメモ。
 ## 必要なもの
 - Windows10 version:2004(Build 19041以上) もしくは Windows11
 

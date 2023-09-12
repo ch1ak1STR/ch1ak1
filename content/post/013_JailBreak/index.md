@@ -2,7 +2,7 @@
 title: "iOS 15.0 ~ 15.4.1のiOS端末をDopamineで脱獄した"
 date: 2023-08-20T09:00:00+09:00
 description:
-draft: false
+draft: true
 tags:
 - JailBreak
 - Dopamin

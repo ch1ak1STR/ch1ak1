@@ -2,7 +2,7 @@
 title: "自分的neovimのお勉強"
 date: 2023-08-15T09:00:00+09:00
 description:
-draft: false
+draft: true
 tags:
 - neovim
 - VScode

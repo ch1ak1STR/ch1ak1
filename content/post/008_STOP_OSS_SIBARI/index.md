@@ -2,7 +2,7 @@
 title: "OSS縛りを辞めた"
 date: 2023-08-11T09:00:00+09:00
 description:
-draft: false
+draft: true
 tags:
 - OSS
 ---

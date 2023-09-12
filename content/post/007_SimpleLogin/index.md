@@ -1,7 +1,7 @@
 ---
 title: "SimpleLoginのホストを諦めた"
 date: 2023-07-17T09:00:00+09:00
-draft: false
+draft: true
 pinned: true
 #featured_image: eyecatch/simplelogin.png
 tags:
