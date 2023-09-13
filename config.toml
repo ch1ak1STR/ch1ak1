@@ -316,7 +316,7 @@ canonifyurls = true
   [params.header.rightLink]
     class = ""
     icon = ""
-    url = "/"
+    url = "/#about"
 
   # --------------------
   # Footer configuration
