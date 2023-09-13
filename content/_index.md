@@ -3,7 +3,8 @@ ch1ak1です。エンジニアであり、ゲーマーであり、ブロガー�
 
 ## As a Enginner
 🥰技術分野は下記。
-{{< index-htmlcode >}}
+{{< index-htmlcode_1 >}}
+{{< index-htmlcode_2 >}}
 
 ## As a Gamer
 😇全く上手くないが本人はまじめにやっているつもりらしい。
