@@ -66,44 +66,52 @@ canonifyurls = true
 [[menu.main]]
   weight = 5
   identifier = "privacy-policy"
-  name = "Privacy-Policy"
+  name = "Policy"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-lock\" aria-hidden=\"true\"></i>"
   url = "/privacy-policy"
 
 [[menu.links]]
   weight = 1
-  identifier = "github"
-  name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
-  url = "https://github.com/ch1ak1STR"
-
-[[menu.links]]
-  weight = 2
-  identifier = "misskey"
-  name = "Misskey"
-  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-mastodon\" aria-hidden=\"true\"></i>"
-  url = "https://misskey.io/@ch1ak1"
-
-[[menu.links]]
-  weight = 3
-  identifier = "twitter"
-  name = "Twitter"
-  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-twitter\" aria-hidden=\"true\"></i>"
-  url = "https://twitter.com/ch1ak1_TW"
-
-[[menu.links]]
-  weight = 4
   identifier = "apps"
   name = "Apps"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-server\" aria-hidden=\"true\"></i>"
   url = "/apps"
 
 [[menu.links]]
-  weight = 5
+  weight = 2
   identifier = "rss"
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
+
+[[menu.misc]]
+  weight = 1
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
+  url = "https://github.com/ch1ak1STR"
+
+[[menu.misc]]
+  weight = 2
+  identifier = "misskey"
+  name = "Misskey"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-mastodon\" aria-hidden=\"true\"></i>"
+  url = "https://misskey.io/@ch1ak1"
+
+[[menu.misc]]
+  weight = 3
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-twitter\" aria-hidden=\"true\"></i>"
+  url = "https://twitter.com/ch1ak1_TW"
+
+[[menu.misc]]
+  weight = 4
+  identifier = "vsmobile"
+  name = "VSmobile"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-hive\" aria-hidden=\"true\"></i>"
+  url = "https://web.vsmobile.jp/exvs2ob/profile?param=b_i0PG_nbljTzugyIEq-i01vYJJuXQ0e9ygO9lzTPOI"
+
 
 # -------------
 # Customization
@@ -114,7 +122,7 @@ canonifyurls = true
   # -----------
   # Description
   # -----------
-  description = "Hugo tranquilpeak theme demo"
+  description = "ch1ak1's homepage"
 
   # -----------
   # Favicon
@@ -170,7 +178,7 @@ canonifyurls = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebarBehavior = 2
+  sidebarBehavior = 1
 
   # Customize link of author avatar in sidebar
   #  [params.sidebar.profile]
