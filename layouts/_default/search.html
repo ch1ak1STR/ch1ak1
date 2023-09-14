@@ -59,9 +59,9 @@
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
-          <!-- 検索部 -->
+          <!-- 検索部。Archiveの入力フォームを間借り -->
           <h1>{{ .Page.Title }}</h1>
-          <input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus placeholder="検索ワード" />
+          <input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus type="text" class="form-control input--xlarge"  placeholder="word" />
           <span id="inputWord"></span> <span id="resultCount"></span>
           <div id="result"></div>
             {{ if (not (eq .Params.showTags false)) }}

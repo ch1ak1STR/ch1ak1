@@ -1,5 +1,5 @@
 ---
-title: "サイト内全文検索"
+title: "Search"
 layout: search
 _build: { list: never }
 ---
