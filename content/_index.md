@@ -16,8 +16,8 @@ ch1ak1です。エンジニアであり、ゲーマーであり、ブロガー�
 
 |Active|Game|What I did|
 |:-:|-----------|-----------|
-|〇|Shadowverse🤓|RAGEプレーオフ×1 MPランキング2桁×3~4|
-|〇|EXVS🐒|ソロAce 2200 53%|
+|〇|Shadowverse🤓|RAGEプレーオフ×1 <br>MPランキング2桁×3~4|
+|〇|EXVS🐒|ソロAce <br>2350 53%|
 |×|IdentityV😡|ソロ勇士×3|
-|×|Blue Archive😡|総力戦(INS)2桁×2 3桁×∞|
+|×|Blue Archive😡|総力戦(INS)2桁×2 3桁×∞ <br>アカウント盗まれた|
 |×|KanColle😡|1~3群×∞|
