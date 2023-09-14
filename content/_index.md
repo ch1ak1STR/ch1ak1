@@ -29,12 +29,15 @@ ch1ak1です。エンジニアであり、ゲーマーであり、ブロガー�
 - その他OSSライブラリ/ソフトをfolkして自前で保守
 
 ## As a Gamer
-😇全く上手くないが本人はまじめにやっているつもりらしい。
+😇下手くそ...<br><br>
 
-|Active|Game|What I did|
-|:-:|---|-----------|
-|〇|Shadowverse🤓|RAGEプレーオフ×1 <br>MPランキング2桁×3~4|
-|〇|EXVS🐒|ソロAce <br>2350 53%|
-|×|IdentityV😡|ソロ勇士×3|
-|×|Blue Archive😡|総力戦(INS)2桁×2 3桁×∞|
-|×|KanColle😡|1~3群×∞|
+- Shadowverse🤓
+  - RAGEプレーオフ×1 MPランキング2桁×3~4
+- EXVS🐒
+  - ソロAce レート2350~ 勝率53%
+- IdentityV😡
+  - ソロ勇士×3 引退済
+- Blue Archive😡
+  - 総力戦(INS)2桁×2 3桁×∞ 引退済
+- KanColle😡
+  - 1~3群×∞ 引退済
