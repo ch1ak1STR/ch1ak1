@@ -84,6 +84,13 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-rss\" aria-hidden=\"true\"></i>"
   url = "/index.xml"
 
+[[menu.links]]
+  weight = 3
+  identifier = "search"
+  name = "Search"
+  pre = "<i class=\"sidebar-button-icon fas fa-lg fa-search\" aria-hidden=\"true\"></i>"
+  url = "/search"
+
 [[menu.misc]]
   weight = 1
   identifier = "github"

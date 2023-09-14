@@ -1,3 +1,8 @@
+---
+title: "Introduction"
+draft: false
+pinned: false
+---
 # Introduction👋
 ch1ak1です。エンジニアであり、ゲーマーであり、ブロガー。
 

@@ -1,3 +1,8 @@
+---
+title: "Privacy Policy"
+draft: false
+pinned: false
+---
 # Privacy Policy
 
 ## 個人情報の利用目的
