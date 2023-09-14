@@ -5,8 +5,7 @@ pinned: false
 ---
 # Apps
 
-ch1ak1が提供しているWEBアプリの一覧
-
+ch1ak1が提供しているWEBアプリの一覧<br><br>
 |Domain|Introduction|
 |---|-----------|
 |[leadershouse.tokyo](https://leadershouse.tokyo)|ホームページ|
