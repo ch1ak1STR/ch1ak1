@@ -9,9 +9,6 @@ useFaviconGenerator = true
 paginate = 7
 canonifyurls = true
 
-[permalinks]
-  posts = "/:year/:month/:slug/"
-
 [taxonomies]
   tag = "tags"
   archive = "archives"
@@ -46,8 +43,8 @@ canonifyurls = true
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "posts"
-  name = "Posts"
+  identifier = "post"
+  name = "Post"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-edit\" aria-hidden=\"true\"></i>"
   url = "/post"
 [[menu.main]]
