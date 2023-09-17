@@ -1,10 +1,13 @@
 ---
 title: "Introduction"
-draft: false
-pinned: false
 ---
 # Introduction👋
-ch1ak1です。エンジニアであり、ゲーマーであり、ブロガー。
+ch1ak1です。ブロガーであり、エンジニアであり、ゲーマー。
+
+## As a Blogger
+
+以前:ゲーム解析/攻略ブログ運営(wordpress)<br>
+現在:おそらく技術?ブログ運営(静的サイト)<br>
 
 ## As a Enginner
 🥰技術分野は下記。<br><br>
@@ -32,12 +35,17 @@ ch1ak1です。エンジニアであり、ゲーマーであり、ブロガー�
 😇下手くそ...<br><br>
 
 - Shadowverse🤓
-  - RAGEプレーオフ×1 MPランキング2桁×3~4
+  - RAGEプレーオフ×1 
+  - MPランキング2桁×3~4
 - EXVS🐒
-  - ソロAce レート2350~ 勝率53%
+  - ソロレート:Ace帯 2350~ 
+  - 勝率:53%
 - IdentityV😡
-  - ソロ勇士×3 引退済
+  - ソロ勇士×3
+  - 引退済
 - Blue Archive😡
-  - 総力戦(INS)2桁×2 3桁×∞ 引退済
+  - 総力戦(INS)2桁×2 3桁×∞
+  - 引退済
 - KanColle😡
-  - 1~3群×∞ 引退済
+  - 1~3群×∞ 
+  - 引退済

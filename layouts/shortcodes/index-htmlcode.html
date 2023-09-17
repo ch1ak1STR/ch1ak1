@@ -1,23 +1,61 @@
-<!-- htmlコードをひとまとめにするため -->
 <style>
-    .image-container {
+  .image-container {
       display: flex;
-    }
-  
-    .image-container img {
-      margin-right: 5px; 
-    }
-  </style>
-  
-  <div class="image-container">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-    <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/>
+      align-items: center;
+      margin-bottom: 20px; /* コンテナ間の余白を設定 */
+  }
+
+  .image-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 50px;
+  }
+
+  .image-text img {
+      vertical-align: middle; 
+  }
+
+  .image-text span {
+      text-align: center; 
+      width: 60px; 
+  }
+</style>
+
+<div class="image-container">
+  <div class="image-text">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40" />
+      <span>C言語</span>
   </div>
-  
-  
+  <div class="image-text">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40" />
+      <span>C++</span>
+  </div>
+  <div class="image-text">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" />
+      <span>Python</span>
+  </div>
+  <div class="image-text">
+      <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40" />
+      <span>Kotlin</span>
+  </div>
+</div>
+
+<div class="image-container">
+  <div class="image-text">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/>
+      <span>Android</span>
+  </div>
+  <div class="image-text">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
+      <span>Docker</span>
+  </div>
+  <div class="image-text">
+      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+      <span>Git</span>
+  </div>
+  <div class="image-text">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/>
+      <span>Nginx</span>
+  </div>
+</div>
