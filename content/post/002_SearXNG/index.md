@@ -1,8 +1,6 @@
 ---
 title: "メタ検索エンジン「SearXNG」をホストした"
 date: 2023-06-25T00:00:00+09:00
-draft: false
-pinned: false
 tags:
 - SearXNG
 - nginx
