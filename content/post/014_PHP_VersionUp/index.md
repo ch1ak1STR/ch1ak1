@@ -51,12 +51,12 @@ apacheを意識しているが他モジュールが意識されてないので�
 <span style="color: red; ">**システム全体のスナップショットを取るなりしてバックアップを取るのを強く勧めます。**</span>
 
 作業前の環境を復元できれば何でもいいです。Ubuntuとかだったらtimeshiftとか楽ですかね。
-```bash
+{{< codeblock "Shell" >}}
 sudo apt install timeshift
 sudo timeshift --create --coomment "BEFORE PHP VERSION UP"
 # 復元する時は下記コマンド
 sudo timeshift --restore 
-```
+{{< /codeblock >}}
 
 問題が起きて手詰まりになったら前環境を復元して復旧させましょう。
 
@@ -66,30 +66,30 @@ sudo timeshift --restore
 
 まずはPHPのバージョンアップのためにリポジトリを登録する。
 
-```bash
+{{< codeblock "Shell" >}}
 sudo LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 sudo apt update
-```
+{{< /codeblock >}}
 
 その後自分が使用しているPHPのパッケージを全部洗いだす。
 
 下記コマンドのXを現在のPHPのバージョン、Yを上げたいバージョンに書き換えて実行する。
 
-```bash
+{{< codeblock "Shell" >}}
 dpkg -l | grep phpX | cut -f3 -d' ' | xargs | sed 's/X/Y/g' 
 # 例えば、PHP8.0からPHP8.2にしたい場合はこうなる。
 dpkg -l | grep php8.0 | cut -f3 -d' ' | xargs | sed 's/8.0/8.2/g'
 # ※ 自分の今のPHPのバージョンはこれで調べられる。
 php -v
-```
+{{< /codeblock >}}
 
 このコマンドを実行すると、自分が今使用しているパッケージ情報を上げたいバージョンのパッケージ名にしたものが出力される。
 
 次に、上記コマンドで得た結果を使用してインストールのシミュレートを行う。
 
-```bash
+{{< codeblock "Shell" >}}
 sudo apt install --simulate (dpkg -l | grep phpX | cut -f3 -d' ' | xargs | sed 's/X/Y/g' の結果全部)
-```
+{{< /codeblock >}}
 
 上記インストールのシミュレートで「Package 'php8.0-XXX' has no installation candidate」のようなエラーが出た場合、そのパッケージをインストール対象から取り除き、再度シミュレートをする。
 
@@ -97,22 +97,22 @@ sudo apt install --simulate (dpkg -l | grep phpX | cut -f3 -d' ' | xargs | sed '
 
 インストール後、php -vで自分のPHP環境を確認し、自分の意図したバージョンになっていればOK。なっていなければ下記コマンドで明示的に設定する。
 
-```bash
+{{< codeblock "Shell" >}}
 update-alternatives --config php
-```
+{{< /codeblock >}}
 
 ### 他設定ファイルの書き換え
 PHPは前の章で切り替わったが、PHPを使用する他アプリの設定も書き換えなければならない。この記事ではnginxの設定と一部の設定ファイルについて解説する。
 
 といっても、下記コマンドで既存環境のphpの設定ファイル群を新しいphpの設定ファイル群にコピーするだけだが。
 
-```bash
+{{< codeblock "Shell" >}}
 # Xは移行前のPHPのバージョン、Yは移行後のPHPのバージョンに書き変える
 rm /etc/php/Y/fpm/pool.d/*
 rm /etc/php/Y/fpm/cli/*
 cp -rL /etc/php/X/fpm/pool.d/* /etc/php/Y/fpm/pool.d/
 cp -rL /etc/php/X/fpm/cli/* /etc/php/Y/fpm/cli/
-```
+{{< /codeblock >}}
 
 大体上記コマンドで間に合うと思うが、必要ならほかの設定ファイルも適宜コピーしていけばよい。他、nginxでphp-fpmを使うにあたってsockを使っている場合は適宜nginx.confやpool内のlistenを見直して合わせること。
 
@@ -120,18 +120,18 @@ cp -rL /etc/php/X/fpm/cli/* /etc/php/Y/fpm/cli/
 
 最後に、nginx再起動、古いphp-fpmの自動起動を止め、新しいphp-fpmを自動起動するようにすれば完了。
 
-```bash
+{{< codeblock "Shell" >}}
 # Xは移行前のPHPのバージョン、Yは移行後のPHPのバージョンに書き変える
 sudo nginx -s reload
 sudo systemctl stop phpX-fpm
 sudo systemctl disable phpX-fpm
 sudo systemctl enable phpY-fpm
 sudo systemctl start phpY-fpm
-```
+{{< /codeblock >}}
 
 上記を行い、PHPアプリに問題があれば適宜confを書き換えて、下記コマンドを打って再読込して直ったか確認する。
 
-```bash
+{{< codeblock "Shell" >}}
 sudo nginx -s reload
 sudo systemctl reload phpY-fpm
-```
+{{< /codeblock >}}
